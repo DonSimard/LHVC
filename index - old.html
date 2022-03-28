@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Lifestyle Resort Villa Map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Don Simard simard57@hotmail.com CC0260">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+    <!-- sorttable.js is borrowed from https://kryogenix.org/code/browser/sorttable/ -->
+    <link rel="stylesheet" href="/css/LHVC.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/sorttable.css">
+    <script src="/scripts/sorttable.js"> </script> 
+
+    <body>
+        <div id="myNavbar" class="navbar">
+            <a href="#" class="active"> Home </a>
+            <a href="#ResortMap"> Resort Map </a>
+            <a href="#RoyalVillas"> Royal </a>
+            <a href="#CrownVillas"> Crown </a>
+            <a href="#CliffVillas"> Cliff </a>
+            <a href="#VillaParkeVillas"> Villa Parke </a>
+            <a href="#OverflowVillas"> Overflow </a>
+            <a href="#ResortInfo"> Info </a>
+            <a href="#VillaList"> Villa List </a>
+            <a href="#Contact"> Contact </a>
+            <a href="#About"> About </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <header class="hints" style="background-color:rgb(250, 143, 4)" >
+            <div class="flex-container">
+                <div>
+                    <h1 id="Hints" style="text-align:center"><u>Lifestyle Holidays Vacation Club Puerto Plata Villa Map</u></h1>
+                    <p>This website was created to help LHVC members navigate the resort map and find Villa information.</p>
+                    <details>
+                        <summary class="left"> <strong>Click for Hints</strong> </summary> 
+                        <ul>
+                            <li> On the <strong>Resort Map</strong>
+                                <ul>
+                                    <li> Select the Villa Section by using the Menu Bar at the bottom of the screen
+                                        or clicking on the Villa Section in the resort map.</li>
+                                    <li> Clicking on other accommodations in Resort Map, or <strong>Info</strong> in Menu Bar 
+                                        will link to Resort Fact Sheets and Pictures</li>
+                                </ul>
+                            </li>
+                            <li> In a <strong>Villa Section</strong>,
+                                <ul>
+                                    <li> Clicking on the Section Name will link to a Resort Fact Sheet.</li>
+                                    <li> Clicking on the Villa number will link to the entry in the Villa List.</li>
+                                    <li> On a Computer, hovering over a Villa number on the Section map will display
+                                            the Villa number, the number of bedrooms and the owner, if known. </li>
+                                </ul>
+                            </li> 
+                            <li> In the <strong>Villa List</strong>,
+                                <ul>
+                                    <li> Sort by clicking the column header. For example, if you click the #BR header, 
+                                        the Villas will be grouped by the number of bedrooms. </li> 
+                                    <li> Villa details can be displayed by clicking the <span style="font-size:24px">&#8227;</span> 
+                                        glyph in the #BR column. </li>
+                                    <li> Clicking on Villa number will link to Facebook Album with pictures. </li>
+                                    <li> Navigate back to the Section Map by clicking the Section name. </li>
+                                    <li> Entries are color coded by Section. </li>
+                                </ul>
+                            </li>
+                            <li> Use <strong>Info</strong> to access Fact Sheets and other information.</li>
+                            <li> Use <strong>Contact</strong> to send comments or corrections to web admin (Don Simard) or 
+                                to enter or update Villa information. When submitted, an email message will open to send. 
+                                Pictures of the Villa can be attached to the email or uploaded to the FB CC Page in a named 
+                                Album (link to Villa Album from Villa List).</li>
+                            <li> Use the back button to return to the previous page.</li>
+                        </ul>
+                    </details>
+                </div>
+                <div>
+                    <a href="#ResortMap"><img src="images/Deja_View.jpg" alt="Chairman Circle Building"></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="maps">
+            <div class="Resort">
+                <h1 id="ResortMap">Resort Map</h1>
+                <h2>Click Villa section for browsable map</h2>
+
+                <img src="/images/Resort.JPG" alt="Full Map of the Resort" usemap="#ResortMap">
+                <map name="ResortMap">
+                <!-- Villa --> 
+                    <area alt="Royal Villas" title="Royal Villas" href="#RoyalVillas" coords="254,652 319,587 353,508 400,491 469,485 499,604 356,664 308,675" shape="poly">
+                    <area alt="Crown Villas" title="Crown Villas" href="#CrownVillas" coords="525,421 506,360 449,377 389,333 387,314 411,287 450,256 517,231 546,228 587,235 625,258 673,294 714,352 737,417 794,425 832,377 852,485 851,559 962,629 964,716 840,670 734,654 657,654 606,657 560,624 552,606 537,521 515,519 485,483 495,443" shape="poly">
+                    <area alt="Cliff Villas" title="Cliff Villas" href="#CliffVillas" coords="430,239,469,174,453,107,511,69,558,95,594,111,603,144,594,187,559,212"  shape="poly">
+                    <area alt="Villa Park Villas" title="Villa Park Villas" href="#VillaParkeVillas" coords="671,695,747,1046" shape="rect" >
+                    <area alt="Overflow Villas" title="Overflow Villas" href="#OverflowVillas" coords="13,543,49,677" shape="rect">
+                <!-- Apartments --> 
+                    <area alt="Sunrise Suites" title="Sunrise Suites" href="#" coords="265,612,24" shape="circle">
+                    <area alt="Presidential Suites" title="Presidential Suites" href="#ResortInfo" coords="52,749 49,688 140,673 209,571 237,571 226,665 193,739 68,763" shape="poly">
+                    <area alt="Royal Suites" title="Royal Suites" href="#ResortInfo" coords="489,444 519,423 498,366 455,385 461,409 457,434 474,440" shape="poly">
+                    <area alt="Residence Suites" title="Residence Suites" href="#ResortInfo" coords="466,635 345,672 326,714 334,753 474,689" shape="poly">
+                    <area alt="Crowne Suites" title="Crowne Suites" href="#ResortInfo" coords="264,665 223,748 283,771 321,757 321,719 332,691 324,677 263,665" shape="poly">
+                <!-- Hotels --> 
+                    <area alt="Tropical Hotel" title="Tropical Hotel" href="#ResortInfo" coords="362,423,80" shape="circle">
+                    <area alt="Cofresi Palm Beach Spa and Resort" title="Cofresi Palm Beach Spa and Resort" href="#ResortInfo" coords="261,570 179,561 113,646 92,689 50,678 60,462 106,405 207,379 271,502 262,561" shape="poly">
+                </map>
+            </div>
+
+            <!-- Royal Villas -->
+            <div class="Royal">            
+                <h1 id="RoyalVillas"> <a href="FactSheets/The Royal Villas – Charimans Circle Club.html"> Royal Villas</a></h1>
+                <h2> On Computer - Mouse over Villa Number for # Bedrooms & <br> Click to view information from Villa List </h2>
+                <img src="/images/RoyalVillas.JPG" alt="Map of Royal Villas Section" usemap="#RoyalVillaMap"/>
+                <map name="RoyalVillaMap" >
+                    <area alt="RV 01" Title="RV 01:3 BR" href="#RV01" coords="085,324,17" shape="circle">
+                    <area alt="RV 02" Title="RV 02:4 BR" href="#RV02" coords="118,310,17" shape="circle">
+                    <area alt="RV 03" Title="RV 03:3 BR" href="#RV03" coords="149,298,17" shape="circle">
+                    <area alt="RV 04" Title="RV 04:3 BR" href="#RV04" coords="180,287,17" shape="circle">
+                    <area alt="RV 05" Title="RV 05:6 BR" href="#RV05" coords="207,268,17" shape="circle">
+                    <area alt="RV 06" Title="RV 06:6 BR" href="#RV06" coords="234,252,17" shape="circle">
+                    <area alt="RV 07" Title="RV 07:? BR" href="#RV07" coords="258,233,17" shape="circle">
+                    <area alt="RV 08" Title="RV 08:4 BR" href="#RV08" coords="286,215,17" shape="circle">
+                    <area alt="RV 09" Title="RV 09:? BR" href="#RV09" coords="327,207,17" shape="circle">
+                    <area alt="RV 10" Title="RV 10:6 BR" href="#RV10" coords="361,192,17" shape="circle">
+                    <area alt="RV 11" Title="RV 11:5 BR" href="#RV11" coords="392,172,17" shape="circle">
+                    <area alt="RV 13" Title="RV 13:? BR" href="#RV13" coords="451,210,17" shape="circle">
+                    <area alt="RV 14" Title="RV 14:? BR" href="#RV14" coords="421,226,17" shape="circle">
+                    <area alt="RV 15" Title="RV 15:7 BR" href="#RV15" coords="386,240,17" shape="circle">
+                    <area alt="RV 16" Title="RV 16:6 BR" href="#RV16" coords="347,257,17" shape="circle">
+                    <area alt="RV 17" Title="RV 17:4 BR" href="#RV17" coords="308,250,17" shape="circle">
+                    <area alt="RV 18" Title="RV 18:4 BR" href="#RV18" coords="280,266,17" shape="circle">
+                    <area alt="RV 19" Title="RV 19:3 BR" href="#RV19" coords="252,280,17" shape="circle">
+                    <area alt="RV 20" Title="RV 20:4 BR" href="#RV20" coords="223,297,17" shape="circle">
+                    <area alt="RV 21" Title="RV 21:5 BR" href="#RV21" coords="195,313,17" shape="circle">
+                    <area alt="RV 22" Title="RV 22:5 BR" href="#RV22" coords="170,329,17" shape="circle">
+                    <area alt="RV 23" Title="RV 23:4 BR" href="#RV23" coords="142,351,17" shape="circle">
+                    <area alt="RV 24" Title="RV 24:? BR" href="#RV24" coords="107,354,17" shape="circle">
+                    <area alt="RV 25" Title="RV 25:6 BR" href="#RV25" coords="175,199,17" shape="circle">
+                    <area alt="RV 26" Title="RV 26:6 BR" href="#RV26" coords="181,169,17" shape="circle">
+                    <area alt="RV 27" Title="RV 27:6 BR" href="#RV27" coords="184,139,17" shape="circle">
+                    <area alt="RV 28" Title="RV 28:5 BR&#10;Owner:Marie-Claude Bussieres" href="#RV28" coords="208,105,17" shape="circle">
+                    <area alt="RV 29" Title="RV 29:6 BR" href="#RV29" coords="229,089,17" shape="circle">
+                    <area alt="RV 30" Title="RV 30:? BR" href="#RV30" coords="275,142,17" shape="circle">
+                    <area alt="RV 31" Title="RV 31:? BR" href="#RV31" coords="252,167,17" shape="circle">
+                    <area alt="RV 32" Title="RV 32:3 BR" href="#RV32" coords="236,187,17" shape="circle">
+                    <area alt="RV 33" Title="RV 33:7 BR" href="#RV33" coords="310,179,17" shape="circle">
+                </map>
+            </div>
+
+            <!-- Crown Villas -->
+            <div class="Crown">
+                <h1 id="CrownVillas"> <a href="FactSheets/The Crown Villas – Charimans Circle Club.html"> Crown Villas</a></h1>
+                <h2> On Computer - Mouse over Villa Number for # Bedrooms & <br> Click to view information from Villa List </h2>
+                <img src="/images/CrownVillas.JPG" alt="Map of Crown Villas Section" usemap="#CrownVillaMap">
+                <map name="CrownVillaMap" >
+                    <area alt="CV01A-5 BR" title="CV 01A-5 BR" href="#CV01A" coords="49,188,31" shape="circle">
+                    <area alt="CVCP" title="CV Casa Piloto-6 BR" href="#CV-CP" coords="95,141,32" shape="circle">
+                    <area alt="CV02AB" title="CV 02AB-2 BR" href="#CV02AB" coords="155,97,26" shape="circle">
+                    <area alt="CV03" title="CV 03-? BR" href="#CV03" coords="209,72,25" shape="circle">
+                    <area alt="CV04" title="CV 04-? BR" href="#CV04" coords="267,44,25" shape="circle">
+                    <area alt="CV05" title="CV 05-2 BR" href="#CV05" coords="332,39,36" shape="circle">
+                    <area alt="CV06 Amigos-4 BR" title="CV 06 Amigos-4 BR" href="#CV06-AMIGOS" coords="407,70,35" shape="circle">
+                    <area alt="CV07" title="CV 07-4 BR" href="#CV07" coords="464,147,25" shape="circle">
+                    <area alt="CV08" title="CV 08-6 BR" href="#CV08" coords="493,189,22" shape="circle">
+                    <area alt="CV09" title="CV 09A-3 BR/9B-3 BR" href="#CV9A9B" coords="518,233,26" shape="circle">
+                    <area alt="CV16" title="CV 16-? BR" href="#CV16" coords="243,193,28" shape="circle">
+                    <area alt="CV17" title="CV 17-? BR" href="#CV17" coords="303,169,28" shape="circle">
+                    <area alt="CV18" title="CV 18A-3 BR/18B-3 BR" href="#CV18AB" coords="368,151,32" shape="circle">
+                    <area alt="CV21" title="CV 21-3 BR" href="#CV21" coords="258,265,23" shape="circle">
+                    <area alt="CV22" title="CV 22-? BR" href="#CV22" coords="329,244,29" shape="circle">
+                    <area alt="CV23" title="CV 23-? BR" href="#CV23" coords="366,229,23" shape="circle">
+                    <area alt="CV24-6 BR" title="CV 24-6 BR" href="#CV24" coords="418,206,26" shape="circle">
+                    <area alt="CV28AB" title="CV 28A-4 BR/28B- 5 BR" href="#CV28AB" coords="329,306,31" shape="circle">
+                    <area alt="CV29" title="CV 29-3 BR" href="#CV29" coords="381,284,26" shape="circle">
+                    <area alt="CV30" title="CV 30-3 BR" href="#CV30" coords="442,262,30" shape="circle">
+                    <area alt="CVE40" title="CV E40-6 BR" href="#CVE40" coords="322,530,29" shape="circle">
+                    <area alt="CVE41" title="CV E41-? BR" href="#CVE41" coords="365,492,26" shape="circle">
+                    <area alt="CV42" title="CV 42-4 BR" href="#CV42" coords="417,466,25" shape="circle">
+                    <area alt="CV43" title="CV 43-3 BR" href="#CV43" coords="469,453,26" shape="circle">
+                    <area alt="CV44" title="CV 44-3 BR" href="#CV44" coords="497,400,20" shape="circle">
+                    <area alt="CV45" title="CV 45-4 BR" href="#CV45" coords="543,414,21" shape="circle">
+                    <area alt="CV46" title="CV 46-3 BR" href="#CV46" coords="531,474,26" shape="circle">
+                    <area alt="CV47AB" title="CV 47A-3 BR/47B-3 BR" href="#CV47AB" coords="570,510,26" shape="circle">
+                    <area alt="CV48" title="CV 48-3 BR" href="#CV48" coords="623,538,26" shape="circle">
+                    <area alt="CV49" title="CV 49-? BR" href="#CV49" coords="621,602,25" shape="circle">
+                    <area alt="CV50" title="CV 50-3 BR" href="#CV50" coords="615,650,21" shape="circle">
+                    <area alt="CV51" title="CV 51-3 BR" href="#CV51" coords="611,701,25" shape="circle">
+                    <area alt="CV53" title="CV 53-3 BR" href="#CV53" coords="427,525,25" shape="circle">
+                    <area alt="CV54" title="CV 54-6 BR" href="#CV54" coords="482,520,25" shape="circle">
+                    <area alt="CV55" title="CV 55-6 BR" href="#CV55" coords="528,551,25" shape="circle">
+                    <area alt="CV57" title="CV 57-5 BR" href="#CV57" coords="548,631,25" shape="circle">
+                    <area alt="CV58" title="CV 58-3 BR" href="#CV58" coords="541,682,23" shape="circle">
+                    <area alt="CV59" title="CV 59-3 BR" href="#CV59" coords="376,639,25" shape="circle">
+                    <area alt="CV60" title="CV 60-4 BR" href="#CV60" coords="386,582,26" shape="circle">
+                    <area alt="CV61" title="CV 61-4 BR" href="#CV61" coords="430,680,26" shape="circle">
+                    <area alt="CV62" title="CV 62-5 BR" href="#CV62" coords="436,628,24" shape="circle">
+                    <area alt="CV63" title="CV 63-? BR" href="#CV63" coords="448,575,25" shape="circle">
+                    <area alt="CV64" title="CV 64-? BR" href="#CV64" coords="497,590,20" shape="circle">
+                    <area alt="CV65" title="CV 65 (V-TINCA) -4 BR" href="#CV65" coords="497,636,23" shape="circle">
+                    <area alt="CV66" title="CV 66-3 BR&#10;Owner:Monika Fleischer & Gilles Charlebois" href="#CV66" coords="494,685,23" shape="circle">
+                    <area alt="CV67" title="CV 67-3 BR" href="#CV67" coords="348,698,26" shape="circle">
+                    <area alt="CV68" title="CV 68-? BR" href="#CV68" coords="391,724,23" shape="circle">
+                    <area alt="CV69" title="CV 69-6 BR" href="#CV69" coords="436,752,26" shape="circle">
+                    <area alt="CV70" title="CV 70-7 BR" href="#CV70" coords="489,749,23" shape="circle">
+                    <area alt="CV71" title="CV 71-? BR" href="#CV71" coords="544,742,25" shape="circle">
+                    <area alt="CV73" title="CV 73-? BR" href="#CV73" coords="588,457,26" shape="circle">
+                    <area alt="CVE03" title="CV E03-6 BR" href="#CVE03" coords="989,832,25" shape="circle">
+                    <area alt="CVE04" title="CV E04-3 BR" href="#CVE04" coords="940,807,25" shape="circle">
+                    <area alt="CVE05" title="CV E05-? BR" href="#CVE05" coords="894,788,23" shape="circle">
+                    <area alt="CVE06" title="CV E06-? BR" href="#CVE06" coords="839,773,25" shape="circle">
+                    <area alt="CVE07" title="CV E07-3 BR" href="#CVE07" coords="781,765,25" shape="circle">
+                    <area alt="CVE08" title="CV E08-3 BR" href="#CVE08" coords="723,764,24" shape="circle">     
+                    <area alt="CVE10" title="CV E10-6 BR" href="#CVE10" coords="1011,763,23" shape="circle">
+                    <area alt="CVE11" title="CV E11-6 BR" href="#CVE11" coords="1055,784,21" shape="circle">
+                    <area alt="CVE13" title="CV E13-3 BR" href="#CVE13" coords="928,727,23" shape="circle">
+                    <area alt="CVE15" title="CV E15-? BR" href="#CVE15" coords="884,714,21" shape="circle">
+                    <area alt="CVE17" title="CV E17-3 BR" href="#CVE17" coords="837,705,23" shape="circle">
+                    <area alt="CVE18" title="CV E18-3 BR" href="#CVE18" coords="785,705,28" shape="circle">
+                    <area alt="CVE19" title="CV E19-3 BR" href="#CVE19" coords="726,703,23" shape="circle">
+                    <area alt="CVE20" title="CV E20-5 BR" href="#CVE20" coords="657,673,700,788" shape="rect">
+                    <area alt="CVE22" title="CV E22-5 BR" href="#CVE22" coords="814,631,855,678" shape="rect">
+                    <area alt="CVE23" title="CV E23-3 BR" href="#CVE23" coords="783,645,22" shape="circle">
+                    <area alt="CVE23A" title="CV E23A-3BR" href="#CVE23A" coords="787,599,22" shape="circle">
+                    <area alt="CVE24" title="CV E24-3 BR" href="#CVE24" coords="703,623,749,675" shape="rect">
+                    <area alt="CVE26" title="CV E26-3 BR" href="#CVE26" coords="662,579,750,618" shape="rect">
+                    <area alt="CVE31" title="CV E31-4 BR" href="#CVE31" coords="716,520,763,569" shape="rect">
+                    <area alt="CVE32" title="CV E32-? BR" href="#CVE32" coords="660,515,711,564" shape="rect">
+                    <area alt="CVE33" title="CV E33-4 BR" href="#CVE33" coords="775,469,827,572" shape="rect">
+                    <area alt="CVE34" title="CV E34-? BR" href="#CVE34" coords="716,467,763,518" shape="rect">
+                    <area alt="CVE35" title="CV E35-3 BR" href="#CVE35" coords="687,492,21" shape="circle">
+                    <area alt="CVE36" title="CV E36-2 BR" href="#CVE36" coords="775,428,830,466" shape="rect">
+                    <area alt="CVE37" title="CV E37-? BR" href="#CVE37" coords="718,373,772,466" shape="rect">
+                    <area alt="CVE38" title="CV E38-3 BR" href="#CVE38" coords="665,378,713,469" shape="rect">
+                    <area alt="CVE39" title="CV E39-3 BR" href="#CVE39" coords="773,350,830,428" shape="rect">
+                </map>
+            </div>
+
+            <!-- The Cliff Villas -->
+            <div class="Cliff">
+                <h1 id="CliffVillas"> <a href="FactSheets/The Cliff Villas – Charimans Circle Club.html"> The Cliff Villas</a></h1>
+                <h2> On Computer - Mouse over Villa Number for # Bedrooms & <br> Click to view information from Villa List </h2>
+                <img src="/images/CliffVillas.JPG" alt="Map of Royal Villas Section" usemap="#CliffVillaMap"/>
+                <map name="CliffVillaMap" >
+                    <area alt="TC 1" Title="TC 1:6 BR" href="#TC01" coords="171,305,17" shape="circle">
+                    <area alt="TC 2" Title="TC 2:? BR" href="#TC02" coords="186,276,17" shape="circle">
+                    <area alt="TC 3" Title="TC 3:? BR" href="#TC03" coords="189,247,17" shape="circle">
+                    <area alt="TC 4" Title="TC 4:7 BR" href="#TC04" coords="181,221,17" shape="circle">
+                    <area alt="TC 6" Title="TC 6:6 BR" href="#TC06" coords="199,163,17" shape="circle">
+<!--
+                    <area alt="TC 6" Title="TC 6:6 BR&#10;Owners: Brenda and David Horton" href="#TC06" coords="199,163,17" shape="circle">
+-->
+                    <area alt="TC 8" Title="TC 8:6 BR" href="#TC08" coords="245,155,17" shape="circle">
+                </map>
+            </div>
+
+            <!-- Villa Park Villas -->
+            <div class="Parke">            
+                <h1 id="VillaParkeVillas"> <a href="FactSheets/Villa Park – Charimans Circle Club.html"> Villa Parke</a></h1>
+                <h2> On Computer - Mouse over Villa Number for # Bedrooms & <br> Click to view information from Villa List </h2>
+                <img src="/images/VillaParkeVillas.JPG" alt="Map of Villa Park Villas Section" usemap="#VillaParkeVillaMap"/>
+                <map name="VillaParkeVillaMap" >
+                    <area alt="VP 18" Title="VP 18:6 BR" href="#VP18" coords="118,248,17" shape="circle">
+                    <area alt="VP 21" title="VP 21:4 BR" href="#VP21" coords="187,204,13" shape="circle">
+                    <area alt="VP 27" title="VP 27:6 BR&#10;Owners:Joe & Wendy Emrich" href="#VP27" coords="115,203,11" shape="circle">
+                    <area alt="VP 29" Title="VP 29:6 BR" href="#VP29" coords="147,138,17" shape="circle">
+                    <area alt="VP 31" title="VP 31:4 BR" href="#VP31" coords="179,116,9" shape="circle">
+                </map>
+            </div>
+
+            <!-- Overflow Villas -->
+            <div class="Overflow">
+                <h1 id="OverflowVillas"> Overflow Villas</h1>
+                <h2> On Computer - Mouse over Villa Number for # Bedrooms & <br> Click to view information from Villa List </h2>
+                <img src="/images/OverflowBig.JPG" alt="Map of Overflow Villas Section" usemap="#OverflowBigMap"/>
+                <map name="OverflowBigMap">
+                    <area alt="M1-2 BR" title="M1-2 BR" href="#M01" coords="38,74,30" shape="circle">
+                    <area alt="M2-4 BR" title="M2-4 BR" href="#M02" coords="50,280,30" shape="circle">
+                    <area alt="M3-4 BR" title="M3-4 BR" href="#M03" coords="85,157,40" shape="circle">
+                    <area alt="M5-3 BR" title="M5-3 BR" href="#M05" coords="102,63,35" shape="circle">  
+                </map>
+            </div>
+        </div>
+
+        <!-- Accommodations Fact Sheets -->
+        <div class="Info">
+            <h1 id="ResortInfo"> Resort Information </h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:40%">Accommodation & Other</th>
+                        <th style="width:15%">Information</th>
+                        <th style="width:30%"><details><summary>Pictures and Other info</summary>Accommodation pictures are only available to members of the Chairman Circle Group on Facebook </details></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cent">
+                        <td class="right"> Royal Villas </td>
+                        <td><a href="FactSheets/The Royal Villas – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="#RV01"> Choose Villa Number from List </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Crown Villas </td>
+                        <td><a href="FactSheets/The Crown Villas – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="#CV01A"> Choose Villa Number from List </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Cliff Villas </td>
+                        <td><a href="FactSheets/The Cliff Villas – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="#TC01"> Choose Villa Number from List </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Villa Parke Villas </td>
+                        <td><a href="FactSheets/Villa Park – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="#VP01"> Choose Villa Number from List </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Sunrise Suites </td>
+                        <td><a href="FactSheets/Sunrise Suites & Penthouse – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set/?set=oa.168109031785844&type=3"> See Facebook Album </a> </td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Presidential Suites </td>
+                        <td><a href="FactSheets/Presidential Suites – Puerto Plata – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set/?set=oa.1287055944787757&type=3"> See Facebook Album </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Royal Suites </td>
+                        <td><a href="FactSheets/The Royal Suites – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set/?set=oa.1287035434789808&type=3"> See Facebook Album </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Residence Suites </td>
+                        <td><a href="FactSheets/The Residence Suites – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set?set=oa.766305827344026&type=3"> See Facebook Album </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Crown Suites </td>
+                        <td><a href="FactSheets/The Crown Suites – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set/?set=oa.1287035434789808&type=3"> See Facebook Album </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Tropical Hotel </td>
+                        <td><a href="FactSheets/The Tropical – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set/?set=oa.248330823497764&type=3"> No Pictures yet - put here </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Cofresi Palm Beach Spa and Resort </td>
+                        <td><a href="FactSheets/Cofresi Palm Beach & Spa Resort – Charimans Circle Club.html"> Fact Sheet </a></td>
+                        <td><a href="https://www.facebook.com/media/set/?set=oa.1287047494788602&type=3"> See Facebook Album </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Restaurants </td>
+                        <td> <a href="https://lifestyleholidaysvc.com/menus/"> Menus </a></td>
+                        <td> <a href="http://chairmanscircleclub.com/all-inclusive-rates/?fbclid=IwAR1wL_TYAgfz89uV8bs_NL7hTlc4DiPMQSQhZgxvRbxSdRv0OwXL00mQnug">All-Inclusive and Resort Fees</a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Excursions </td>
+                        <td> <a href="https://www.lifestyleexcursions.com/"> Information </a></td>
+                        <td> <a href="https://blog.amstardmc.com/things-to-do-in-puerto-plata-good-vacation-spot/?fbclid=IwAR0-89XXFNJysOQORESV-Ho4M4bIFqSFEX0gEXLq44QG0o-RtYY3h_KETmA">Things to Do in Puerto Plata</a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Xtreme Zone </td>
+                        <td> <a href="https://funlifestylevacations.com/things-to-do/xtreme-zone/"> Information </a></td>
+                        <td> </td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Yin Yang Spa </td>
+                        <td> <a href="https://yin-yangspa.com/"> Treatments </a></td>
+                        <td> <a href="https://yin-yangspa.com/gallery/"> Gallery </a></td>
+                    </tr>
+                    <tr class="cent">
+                        <td class="right"> Chairman Circle Member List </td>
+                        <td> <a href="https://docs.google.com/spreadsheets/d/1zzO_zEH42WRoiEJQKi4Z1C1lYrBFeei3oZtwXYYOelY/edit?fbclid=IwAR2in5otK5osf2ay1oYJT6CbAArVOhvYToIo3ftY17gpkbI5XDC1v1OkIIE#gid=0"> CC Member List </a></td>
+                        <td> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br><br>
+        </div>
+
+        <!-- Villa Information List-->
+        <div class="List">
+            <h1 id="VillaList"> Villa List </h1>
+            <h2> Click Column Header to sort table </h2>
+            <h3> Members of the Chairman Circle Group on Facebook can click Villa # to see Pictures</h3>
+            <table class="sortable">
+                <thead style="vertical-align:bottom">
+                    <tr> 
+                        <th style="width:5%">Section</th>
+                        <th style="width:10%">Villa #</th>
+                        <th style="width:15%">#BR</th>
+                        <th style="width:50%" class="left">Comments</th>
+                        </tr>
+                </thead>
+                <tbody class="Royal" id="RoyalList">
+
+                    <!--Royal-->
+                    <tr id="RV01" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.414280856573153&type=3">  RV 01 </a></td>            <td><details><summary> 3 BR </summary> Entry:MBR       <br> Upper:2 BR       <br> Lower:      </details> </td> <td class="left">Very nice. Highly recommended. Upstairs Theatre Seating</td></tr>
+                    <tr id="RV02" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.418121152942195&type=3">  RV 02 </a></td>            <td><details><summary> 4 BR </summary> Entry:MBR       <br> Upper:3 BR       <br> Lower:      </details> </td> <td class="left">Newly built - beautiful!</td></tr>
+                    <tr id="RV03" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.237308324533094&type=3">  RV 03 </a></td>            <td><details><summary> 3 BR </summary> Entry:MBR       <br> Upper:2 BR       <br> Lower:      </details> </td> <td class="left">Highly recommended. Okay... Low budget decoration.. No dinning room inside, only on terrace, great pool. Very nice. </td></tr>
+                    <tr id="RV04" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.114686920530822&type=3">  RV 04 </a></td>            <td><details><summary>      </summary> Entry:MBR       <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV05" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.122815599698635&type=3">  RV 05 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Gorgeous villa. Highly recommended.</td></tr>
+                    <tr id="RV06" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.744202003195645&type=3">  RV 06 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Two MBRs</td></tr>
+                    <tr id="RV07" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set?set=oa.1323454201147931&type=3">  RV 07 </a></td>            <td><details><summary> 5 BR </summary> Entry:3 BR      <br> Upper:MBR, 1 BR  <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV08" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.900484220719571&type=3">  RV 08 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Handicap accessible. Very nice. Highly recommended.</td></tr>
+                    <tr id="RV09" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.226012065672791&type=3">  RV 09 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Not renting</td></tr>
+                    <tr id="RV10" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set?set=oa.1565194250343401&type=3">  RV 10 </a></td>            <td><details><summary> 6 BR </summary> Entry:MBR, 3 BR <br> Upper:2 BR       <br> Lower:      </details> </td> <td class="left">Gorgeous/ Highly recommended.</td></tr>
+                    <tr id="RV11" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set?set=oa.1077929672691549&type=3">  RV 11 </a></td>            <td><details><summary> 5 BR </summary> Entry:MBR, 2 BR <br> Upper:2 BR       <br> Lower:      </details> </td> <td class="left">Gorgeous villa. Highly recommended. 1st Floor has 3 bedrooms (master w/king and jacuzzi tub, 2 twins, 1 king). 2nd Floor has 2 bedrooms (1 king, 2 full size beds).</td></tr>
+                    <tr id="RV12" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.234974744930989&type=3">  RV 12 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV13" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.117528080245952&type=3">  RV 13 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV14" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.438454577503584&type=3">  RV 14 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV15" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.880414616111114&type=3">  RV 15 </a></td>            <td><details><summary> 7 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Gorgeous villa. Highly recommended.</td></tr>
+                    <tr id="RV16" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.471237617210516&type=3">  RV 16 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Gorgeous villa,  2 mbr, nice BBQ area, small pool area</td></tr>
+                    <tr id="RV17" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.907358409424181&type=3">  RV 17 </a></td>            <td><details><summary> 4 BR </summary> Entry:2 MBR     <br> Upper:           <br> Lower:2 BR  </details> </td> <td class="left">Gorgeous. 2 masters on street level, 2 bedrooms downstairs, Large covered patio, Covered  double golf cart parking</td></tr>
+                    <tr id="RV18" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.226057995814447&type=3">  RV 18 </a></td>            <td><details><summary> 4 BR </summary> Entry:2 BR      <br> Upper:2 MBR      <br> Lower:      </details> </td> <td class="left">Beautiful. Recommended</td></tr>
+                    <tr id="RV19" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.220251926384773&type=3">  RV 19 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV20" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2764909747064427&type=3"> RV 20 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Highly recommended.</td></tr>
+                    <tr id="RV21" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1287023264791025&type=3"> RV 21 </a></td>            <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Privacy good. Handicap accessible. Elevator on-site. Open concept layout. Very nice. Highly recommended.</td></tr>
+                    <tr id="RV22" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.164515415162891&type=3">  RV 22 </a></td>            <td><details><summary> 5 BR </summary> Entry:2 BR      <br> Upper:MBR, 2 BR  <br> Lower:      </details> </td> <td class="left">Privacy good. Handicap accessible. Elevator on-site. Open concept layout. Very nice. Highly recommended.</td></tr>
+                    <tr id="RV23" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1042179546283953&type=3"> RV 23 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Very nice. Highly recommended.</td></tr>
+                    <tr id="RV24" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.874083906084965&type=3">  RV 24 </a></td>            <td><details><summary> 4 BR </summary> Entry:2 BR      <br> Upper:2 BR       <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV25" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.873870312772991&type=3">  RV 25 </a></td>            <td><details><summary> 6 BR </summary> Entry:2 MBR     <br> Upper:           <br> Lower:4 BR  </details> </td> <td class="left"></td></tr>
+                    <tr id="RV26" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.319024349524773&type=3">  RV 26 </a></td>            <td><details><summary> 6 BR </summary> Entry:2 BR      <br> Upper:           <br> Lower:4 BR  </details> </td> <td class="left">2 MBR on street level. Nice layout - good location.</td></tr>
+                    <tr id="RV27" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.234083341661904&type=3">  RV 27 </a></td>            <td><details><summary> 6 BR </summary> Entry:3 BR      <br> Upper:2 BR       <br> Lower:MBR   </details> </td> <td class="left">Gorgeous villa. Highly recommended. Master bedroom on lower level</td></tr>
+                    <tr id="RV28" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.427734751682805&type=3">  RV 28 </a></td>            <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:      <br> Owner:Marie-Claude Bussieres </details> </td> <td class="left">Gorgeous villa. Across from Tropical Lobby. Big pool with extremely private back yard. Highly recommended.</td></tr>
+                    <tr id="RV29" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.138227884710113&type=3">  RV 29 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left">Gorgeous villa. Highly recommended, across from Tropical fountain</td></tr>
+                    <tr id="RV30" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.4256283804399084&type=3"> RV 30 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV31" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2759761464237872&type=3"> RV 31 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:      </details> </td> <td class="left"></td></tr>
+                    <tr id="RV32" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href ="https://www.facebook.com/media/set/?set=oa.527034974938781&type=3"> RV 32 </a></td>            <td><details><summary> 3 BR </summary> Entry:1 BR      <br> Upper:MBR, 1 BR  <br> Lower:      </details> </td> <td class="left">Very nice. Highly recommended.</td></tr>
+                    <tr id="RV33" class="Royal cent"> <td><a href="#RoyalVillas">          Royal</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.873874012772621&type=3">  RV 33 </a></td>            <td><details><summary> 7 BR </summary> Entry:3 BR      <br> Upper:MBR, 3 BR  <br> Lower:      </details> </td> <td class="left">Privacy good. Handicap accessible. Pool table in backyard gazebo. Gorgeous villa. Highly recommended.</td></tr>
+
+                    <!--Crown-->
+                    <tr id="CV01A"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1079191452561934&type=3"> CV 01A </a></td>           <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Older Villa on beach. Entrance next to VIP Beach. </td></tr>
+                    <tr id="CV-CP"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.233168795050203&type=3">  CV Casa Piloto </a></td>   <td><details><summary> 6 BR </summary> Entry:MBR, 3 BR <br> Upper:           <br> Lower:2 BR     </details> </td> <td class="left">Entrance next to VIP Beach. Entrance on 2nd floor. Lower level access to large pool and yard. Mediterranean charm. 2 Bedrooms on Street Level share a bathroom.</td></tr>
+                    <tr id="CV02AB"  class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1121305561663967&type=3"> CV 02AB </a></td>          <td><details><summary> 2 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Older Villa on beach</td></tr>
+                    <tr id="CV02C"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2487676594861472&type=3"> CV 02C </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Older Villa on beach</td></tr>
+                    <tr id="CV03"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.739875173609997&type=3">  CV 03 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV04"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1161110797660231&type=3"> CV 04 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV05"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3982477418443417&type=3"> CV 05 </a></td>            <td><details><summary> 2 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Older villa. Questionable A/C. Backs up on site for Sunday member party.</td></tr>
+                    <tr id="CV06-AMIGOS" class="Crown cent"> <td><a href="#CrownVillas">   Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1841515932691875&type=3"> CV 06-AMIGOS </a></td>     <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV07"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.856757838496291&type=3">  CV 07 </a></td>            <td><details><summary> 4 BR </summary> Entry:3 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">Older villa. Backs up on site for Sunday member party.</td></tr>
+                    <tr id="CV08"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1280590802100938&type=3"> CV 08 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Old villa. In need of lots of upgrades. Pool table. Lots of stray cats roaming around. NOT recommended.</td></tr>
+                    <tr id="CV09A9B" class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.833666873866458&type=3">  CV 09A </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV09B"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1360319404320458&type=3"> CV 09B </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV16"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1793238714172138&type=3"> CV 16 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV17"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.4194754957256302&type=3"> CV 17 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV18AB"  class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.747248835894957&type=3">  CV 18A </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">No privacy from the road.</td></tr>
+                    <tr id="CV18B"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.204264708067981&type=3">  CV 18B </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV21"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.255928215887554&type=3">  CV 21 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Very pretty back yard & turret</td></tr>
+                    <tr id="CV22"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.888959778566184&type=3">  CV 22 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Definitely not recommended</td></tr>
+                    <tr id="CV23"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.226891492374849&type=3">  CV 23 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV24"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.139084274614551&type=3">  CV 24 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV28AB"  class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.919717521898746&type=3">  CV 28A </a></td>           <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Next to villa check in & Royal Suites.</td></tr>
+                    <tr id="CV28B"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1559058204280731&type=3"> CV 28B </a></td>           <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Next to villa check in & Royal Suites</td> </tr>
+                    <tr id="CV29"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.424502642224967&type=3">  CV 29 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV30"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.434979800881879&type=3">  CV 30 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Backs up on V29.</td></tr>
+                    <tr id="CV42"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.121238973134279&type=3">  CV 42 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Backs up on field where 10th Anniversary Party held. No privacy at pool from walkers. Old villa. NOT recommended.</td></tr>
+                    <tr id="CV43"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.734561524113262&type=3">  CV 43 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">On a private Street</td></tr>
+                    <tr id="CV44"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1136273286824252&type=3"> CV 44 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">On a private Street</td></tr>
+                    <tr id="CV45"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.120633246583941&type=3">  CV 45 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">On a private Street</td></tr>
+                    <tr id="CV46"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.151322986648030&type=3">  CV 46 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">On a private Street. Good location. Nice villa. Recommended.</td></tr>
+                    <tr id="CV47"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="">                                                                   CV 47 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV47A"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.765474904347240&type=3">  CV 47A </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Open concept layout. Small kitchen. Great pool in lovely garden. Very private. Recommended.</td></tr>
+                    <tr id="CV47B"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.151108660011840&type=3">  CV 47B </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV48"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.131896592106238&type=3">  CV 48 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV50"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.898487023644653&type=3">  CV 50 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Nice pool, cozy, inside needs updating</td></tr>
+                    <tr id="CV51"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1104781076348579&type=3"> CV 51 </a></td>            <td><details><summary> 3 BR </summary> Entry:2 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">privacy acceptable</td></tr>
+                    <tr id="CV53"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.991914828008677&type=3">  CV 53 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV54"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1287030854790266&type=3"> CV 54 </a></td>            <td><details><summary> 6 BR </summary> Entry:5 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">Unique villa. Recommended</td></tr>
+                    <tr id="CV55"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1287025778124107&type=3"> CV 55 </a></td>            <td><details><summary> 6 BR </summary> Entry:5 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">1 bedroom guesthouse, 2 outside bedrooms great patio & privacy. AC worked well, Pool was good. </td></tr>
+                    <tr id="CV57A"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.716107015717745&type=3">  CV 57A </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Castle #2</td></tr>
+                    <tr id="CV57"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.886074755543231&type=3">  CV 57 </a></td>            <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">No privacy at the pool</td></tr>
+                    <tr id="CV58"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.250689646574151&type=3">  CV 58 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV59"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.243430657413735&type=3">  CV 59 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV60"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.227246145667034&type=3">  CV 60 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV61"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1212552978904721&type=3"> CV 61 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV62"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.168455565075570&type=3">  CV 62 </a></td>            <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Remodeled in 2019</td></tr>
+                    <tr id="CV65"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.449929339714398&type=3">  CV 65 V-Tinca</a></td>     <td><details><summary> 4 BR </summary> Entry:2 BR      <br> Upper:MBR        <br> Lower:1 BR     </details> </td> <td class="left">Beautiful pool area plus a 1 bedroom guesthouse. Very nice. private location Recommended.</td></tr>
+                    <tr id="CV66"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set?set=oa.425056185277486&type=3">   CV 66</a></td>             <td><details><summary> 3 BR </summary> Entry:2 BR      <br> Upper:MBR        <br> Lower:     <br>Owner:Monika Fleischer & Gilles Charlebois</details> </td> <td class="left">Renovated 2019. AC throughout, Gazebo and garage</td></tr>
+                    <tr id="CV67"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1131709493655737&type=3"> CV 67 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Nice turret, each bedroom on separate levels, No privacy from people walking.</td></tr>
+                    <tr id="CV68"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.243430657413735&type=3">  CV 68 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CV69"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1815223311980217&type=3"> CV 69 </a></td>            <td><details><summary> 6 BR </summary> Entry:2 BR      <br> Upper:           <br> Lower:4 BR     </details> </td> <td class="left">Round master bedroom, small bedroom near front door, 4 add'l beds in separate building, could use updating; ok to stay</td></tr>
+                    <tr id="CV70"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.236613094704485&type=3">  CV 70 </a></td>            <td><details><summary> 7 BR </summary> Entry:4 BR      <br> Upper:1 BR, 2 MBR<br> Lower:         </details> </td> <td class="left">a beautiful villa, living room area is upstairs.</td></tr>
+                    <tr id="CV71"    class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.230548015281846&type=3">  CV 71 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CVE03"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1042157875944233&type=3"> CV E03 </a></td>           <td><details><summary> 6 BR </summary> Entry:3 BR      <br> Upper:3 BR       <br> Lower:         </details> </td> <td class="left">Privacy good. Good A/C in common areas. Near end of street with helicopter storage. Recommended.</td></tr>
+                    <tr id="CVE04"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1322996774527007&type=3"> CV E04 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">At end of the street with the helicopter storage. Very quiet.</td></tr>
+                    <tr id="CVE06"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.216418316790215&type=3">  CV E06 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">At end of the street with the helicopter storage. Very quiet.</td></tr>
+                    <tr id="CVE07"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1085008228989455&type=3"> CV E07 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Great A/C. Great privacy. Nothing built up behind, huge lot, mango trees</td></tr>
+                    <tr id="CVE08"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.229513842181942&type=3">  CV E08 </a></td>           <td><details><summary> 3 BR </summary> Entry:2 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">Renovated. Simple layout. Recommended</td></tr>
+                    <tr id="CVE10"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.323081339035603&type=3">  CV E10 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Privacy OK. Nice little villa. Small pool area. Recommended.</td></tr>
+                    <tr id="CVE11"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.412602343181972&type=3">  CV E11 </a></td>           <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Great villa! 2 Jacuzzi's at ends of the pool. Very private, near end of street with helicopter storage. Recommended.</td></tr>
+                    <tr id="CVE13"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.874156012744421&type=3">  CV E13 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Very private and quiet! Great backyard and A/C. On street with helicopter storage.  Recommended.</td></tr>
+                    <tr id="CVE16"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3659812787447944&type=3"> CV E16 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">On corner. Very private backyard. Nice villa. Recommended.</td></tr>
+                    <tr id="CVE17"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.402218844215142&type=3">  CV E17 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Good AC/plumbing. Recommended</td></tr>
+                    <tr id="CVE18"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.887878638038825&type=3">  CV E18 </a></td>           <td><details><summary> 3 BR </summary> Entry:2 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">Pool visible from the road.</td></tr>
+                    <tr id="CVE19"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.433424367778698&type=3">  CV E19 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Pool has no privacy from VE24</td></tr>
+                    <tr id="CVE20"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1287052871454731&type=3"> CV E20 </a></td>           <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Pool visible from road. Small kitchen. Big backyard. Across from Marcus. </td></tr>
+                    <tr id="CVE22"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.405641700522868&type=3">  CV E22 </a></td>           <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CVE23"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.436494857769144&type=3">  CV E23 </a></td>           <td><details><summary> 3 BR </summary> Entry:3 BR      <br> Upper:           <br> Lower:         </details> </td> <td class="left">3rd bedroom outside by pool.  Nice yard.  </td></tr>
+                    <tr id="CVE23A"  class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1380208728980785&type=3"> CV E23A </a></td>          <td><details><summary> 3 BR </summary> Entry:3 BR      <br> Upper:           <br> Lower:         </details> </td> <td class="left">Immediately beside E23. Nice condition, pool is right beside the road so no privacy, tiny yard. 2 1/2 bath. Directly behind it is a little house with chickens and ROOSTERS that don't let you sleep in. </td></tr>
+                    <tr id="CVE24"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.269207954537723&type=3">  CV E24 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Great A/C. Older Villa. Workers walk through yard to get to adjoining Villas.</td></tr>
+                    <tr id="CVE26"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3846021235454342&type=3"> CV E26 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Huge Lot. Great for small children.</td></tr>
+                    <tr id="CVE31"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.886672958159393&type=3">  CV E31 </a></td>           <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Recommended.</td></tr>
+                    <tr id="CVE32"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.323873752295481&type=3">  CV E32 </a></td>           <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CVE33"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.160234575869970&type=3">  CV E33 </a></td>           <td><details><summary> 4 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Privacy OK. Villa recently upgraded. Nice pool area.</td></tr>
+                    <tr id="CVE35"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.884712042304571&type=3">  CV E35 </a></td>           <td><details><summary> 3 BR </summary> Entry:MBR       <br> Upper:2 BR       <br> Lower:         </details> </td> <td class="left">No privacy from the road which is the main thoroughfare to Serenity Beach and Deja View.</td></tr>
+                    <tr id="CVE36"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.995566190603402&type=3">  CV E36 </a></td>           <td><details><summary> 2 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Semi-private pool from VE39.There is a gorgeous deck that you can walk out to and one bedroom on each side.</td></tr>
+                    <tr id="CVE38"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.950611891765499&type=3">  CV E38 </a></td>           <td><details><summary> 3 BR </summary> Entry:2 BR      <br> Upper:MBR        <br> Lower:         </details> </td> <td class="left">Casa Evita. Older villa. Lots of privacy. 2 bedrooms down. Master up. Cabana outside with bed.</td></tr>
+                    <tr id="CVE39"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2843253459245753&type=3"> CV E39 </a></td>           <td><details><summary> 3 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CVE40"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.421896695790324&type=3">  CV E40 </a></td>           <td><details><summary> 6 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Across from villa reception.Two covered beds with a larger pool. 2 Cold Tubs. Large covered balconies.  Recommended.</td> </tr>
+                    <tr id="CVE41"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.873868182773204&type=3">  CV E41 </a></td>           <td><details><summary> 7 BR </summary> Entry:MBR, 2 BR <br> Upper:MBR 2 BR   <br> Lower:2 BR     </details> </td> <td class="left">across from villa reception. pool table. Two covered beds at large pool. Covered balconies. Highly recommended.</td></tr>
+                    <tr id="CVE43"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1862746793881618&type=3"> CV E43 </a></td>           <td><details><summary>      </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CVE49"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.239970510927309&type=3">  CV E49 </a></td>           <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Privacy OK. You can see a corner from the road. Huge Lot.</td></tr>
+                    <tr id="CVE65"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.716752822365504&type=3">  CV E65 </a></td>           <td><details><summary> 5 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="CVE70"   class="Crown cent"> <td><a href="#CrownVillas">       Crown</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.876518762508146&type=3">  CV E70 </a></td>           <td><details><summary> 7 BR </summary> Entry:          <br> Upper:           <br> Lower:         </details> </td> <td class="left">Privacy OK. You can see a corner from the road. Huge Lot.</td></tr>
+
+                    <!-- The Cliff Villas -->
+                    <tr id="TC01" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1821001574732704&type=3"> TC 01 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left">Gorgeous villa. Infinity pool. Private walk down to beach. Super nice. Highly recommended.</td></tr>
+                    <tr id="TC02" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3734447913309825&type=3"> TC 02 </a></td>            <td><details><summary>      </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="TC03" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3966479230043032&type=3"> TC 03 </a></td>            <td><details><summary>      </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="TC04" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.877138839112805&type=3">  TC 04 </a></td>            <td><details><summary> 7 BR </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left">Gorgeous villa. Infinity pool. Private walk down to beach. Super nice. Highly recommended.</td></tr>
+                    <tr id="TC05" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1171360049952311&type=3"> TC 05 </a></td>            <td><details><summary>      </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="TC06" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.873909116102444&type=3">  TC 06 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left">Gorgeous villa. Infinity pool. Private walk down to beach. Super nice. Highly recommended. (The Castle)</td></tr>
+<!--
+
+                    <tr id="TC06" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.873909116102444&type=3">  TC 06 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br>  Upper:          <br> Lower:         <br> Owners: Brenda and David Horton </details> </td> <td class="left">Gorgeous villa. Infinity pool. Private walk down to beach. Super nice. Highly recommended. (The Castle)</td></tr>
+--> 
+                    <tr id="TC07" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.255901579254029&type=3">  TC 07 </a></td>            <td><details><summary>      </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left"></td></tr>
+                    <tr id="TC08" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.413036533316459&type=3">  TC 08 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left">Gorgeous villa. Ocean front. Super nice. Highly recommended.</td></tr>
+                    <tr id="TC09" class="Cliff cent"> <td><a href="#CliffVillas">     The Cliffs</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1044979192649895&type=3"> TC 09 </a></td>            <td><details><summary> 6 BR </summary> Entry:          <br>  Upper:          <br> Lower:         </details> </td> <td class="left">may not be available as a rental. Gorgeous villa. Ocean front. Super nice. Highly recommended.</td></tr>
+
+                    <!-- Villa Parke Villas -->
+                    <tr id="VP01" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3560131707433132&type=3"> VP 01 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP02" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.323024522395184&type=3">  VP 02 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP03" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.251376529921387&type=3">  VP 03 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP04" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.469647087372035&type=3">  VP 04 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP05" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.412134913188067&type=3">  VP 05 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP06" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.426097355397313&type=3">  VP 06 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP07" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.903920783770241&type=3">  VP 07 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP08" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.417786676133976&type=3">  VP 08 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP09" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.696469504391138&type=3">  VP 09 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP10" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3528114337283702&type=3"> VP 10 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP11" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1440234269640817&type=3"> VP 11 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP12" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.905889520215641&type=3">  VP 12 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP13" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.408551197142017&type=3">  VP 13 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP14" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.201275441746468&type=3">  VP 14 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP15" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.4314917095201359&type=3"> VP 15 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP16" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.228657372075226&type=3">  VP 16 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP17" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3834188826639951&type=3"> VP 17 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP18" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.428378775036802&type=3">  VP 18 </a></td>            <td><details><summary> 6 BR </summary> Entry:MBR, 2 BR <br> Upper:          <br> Lower:MBR, 2 BR </details></td>  <td class="left">Beautiful</td></tr>
+                    <tr id="VP19" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.452000692707264&type=3">  VP 19 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP20" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.715045179198120&type=3">  VP 20 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP21" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2778694009126389&type=3"> VP 21 </a></td>            <td><details><summary> 4 BR </summary> Entry:MBR, 1 BR <br> Upper:MBR, 1 BR <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP22" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.720223848631325&type=3">  VP 22 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP23" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.455777822118632&type=3">  VP 23 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP24" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1107615329698334&type=3"> VP 24 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP25" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3278070808960307&type=3"> VP 25 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP26" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.430233041462748&type=3">  VP 26 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP27" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.451506359199793&type=3">  VP 27 </a></td>            <td><details><summary> 6 BR </summary> Entry:MBR, 2 BR <br> Upper:MBR, 2 BR <br> Lower:          <br> Owners: Joe & Wendy Emrich</details></td> <td class="left">Truly beautiful and spacious!</td></tr>
+                    <tr id="VP28" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.167873261443618&type=3">  VP 28 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP29" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1285533464940005&type=3"> VP 29 </a></td>            <td><details><summary> 6 BR </summary> Entry:MBR, 2 BR <br> Upper:MBR, 2 BR <br> Lower:          </details> </td> <td class="left">Beautiful</td></tr>
+                    <tr id="VP30" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.332131471352111&type=3">  VP 30 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP31" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.730143604305081&type=3">  VP 31 Casa Con Vista a la Montana </a></td> <td><details> <summary> 4 BR </summary> Entry:  <br> Upper:         <br> Lower: </details> </td> <td class="left"></td></tr>
+                    <tr id="VP32" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.919102278831396&type=3">  VP 32 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP33" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.872126433549244&type=3">  VP 33 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP34" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.901708690637312&type=3">  VP 34 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP35" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.5079352422135447&type=3"> VP 35 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP36" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.412531066491021&type=3">  VP 36 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP37" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3800575630058092&type=3"> VP 37 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP38" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.913464776076977&type=3">  VP 38 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP39" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.211263314062201&type=3">  VP 39 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP40" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.203743694795899&type=3">  VP 40 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP41" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.3909932172392705&type=3"> VP 41 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP42" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.228598585638136&type=3">  VP 42 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP43" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.844808099645531&type=3">  VP 43 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP44" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2861998550756628&type=3"> VP 44 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP45" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.869979646879377&type=3">  VP 45 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+                    <tr id="VP46" class="Parke cent"> <td><a href="#VillaParkeVillas">Villa Park</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.258884278999646&type=3">  VP 46 </a></td>            <td><details><summary>      </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td> <td class="left"></td></tr>
+
+                    <!-- Overflow Villas -->
+                    <tr id="M01" class="Overflow cent"> <td><a href="#OverflowVillas">  Overflow</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.950078665527317&type=3">    M01 </a></td>            <td><details><summary> 2 BR </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td><td class="left">Across from Cofresi lobby. Beautiful view</td></tr>
+                    <tr id="M02" class="Overflow cent"> <td><a href="#OverflowVillas">  Overflow</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.429815468069680&type=3">    M02 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td><td class="left">Across from Cofresi lobby. Awesome view</td></tr>
+                    <tr id="M03" class="Overflow cent"> <td><a href="#OverflowVillas">  Overflow</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.877135532446469&type=3">    M03 </a></td>            <td><details><summary> 4 BR </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td><td class="left">Across from Cofresi lobby. Privacy good. Good A/C in common areas. Ocean view. Recommended.</td></tr>
+                    <tr id="M04" class="Overflow cent"> <td><a href="#OverflowVillas">  Overflow</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.2849173498733071&type=3">   M04 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td><td class="left">Across from Cofresi lobby. Wonderful views. Highly recommended</td></tr>
+                    <tr id="M05" class="Overflow cent"> <td><a href="#OverflowVillas">  Overflow</a></td> <td><a href="https://www.facebook.com/media/set/?set=oa.1878202302342076&type=3">   M05 </a></td>            <td><details><summary> 3 BR </summary> Entry:          <br> Upper:          <br> Lower:          </details> </td><td class="left">NOT recommended.</td></tr>
+
+                    <!-- Other Villas -->
+                    <tr id="V-AGUI"     class="Other cent"> <td>Other</td> <td>V AGUI</td>     <td><details><summary> 5 BR </summary> Entry: <br>  Upper: <br> Lower: </details> </td> <td class="left"></td></tr>
+                    <tr id="V-Angelise" class="Other cent"> <td>Other</td> <td>V Angelise</td> <td><details><summary> 4 BR </summary> Entry: <br>  Upper: <br> Lower: </details> </td> <td class="left">On top of mountain on left side of road to Cofresi. Cannot use golf cart there because of bad road. Must call for shuttle service every time.</td></tr>
+                    <tr id="V-MAG"      class="Other cent"> <td>Other</td> <td>V MAG</td>      <td><details><summary>      </summary> Entry: <br>  Upper: <br> Lower: </details> </td> <td class="left"></td></tr>
+                    <tr id="V-MAGNOLIA" class="Other cent"> <td>Other</td> <td>V MAGNOLIA</td> <td><details><summary> 4 BR </summary> Entry: <br>  Upper: <br> Lower: </details> </td> <td class="left">Recommended. Villa in the field</td></tr>
+                    <tr id="V-PA"       class="Other cent"> <td>Other</td> <td>V PA</td>       <td><details><summary> 5 BR </summary> Entry: <br>  Upper: <br> Lower: </details> </td> <td class="left"></td></tr>
+                    <tr id="V-VICTORIA" class="Other cent"> <td>Other</td> <td>V VICTORIA</td> <td><details><summary>      </summary> Entry: <br>  Upper: <br> Lower: </details> </td> <td class="left">NOT recommended.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <footer id="Contact">  
+            <!-- Update Villa Information & Contact forms -->
+            <div class="Info">
+                <h1 id="Form"> Villa Info Form</h1>
+                <p> Currently, this works best if do <u>not</u> exclusively use webmail. Complete form below and click Submit. An email window will pop up with the information that you can mail to me.
+                    If you have pictures, attach to the email and I will add them to the Facebook site. </p>
+                <form action="mailto:domrepai@outlook.com?cc=simard57@gmail.com&Subject=VillaSiteUpdate" method="POST" enctype="text/plain">
+                    <table style="table-layout: auto;">
+                        <thead>
+                        <tr> 
+                            <td class="right"><strong>Category</strong></td>
+                            <td class="left"><strong>Information</strong></td>
+                        </thead>
+                    
+                        <tbody>
+                            <tr class="right">
+                                <td> Section </tD>
+                                <td class="left">
+                                    <select name="Sect"> 
+                                    <option value="none">Section</option>
+                                    <option value="Royal">Royal</option>
+                                    <option value="Crown">Crown</option>
+                                    <option value="The Cliff">The Cliff</option>
+                                    <option value="Villa Parke">Villa Park</option>
+                                    <option value="Overflow">Overflow</option>
+                                    <option value="Other">Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right">Villa#</td>
+                                <td class="left"> <input type="text" id="VN" name="Villa Number" value="" size="10"></td>
+                            </tr>
+                            <tr> 
+                                <td class="right">Owner</td>
+                                <td class="left"> <input type="text" id="Owner" name="Owner" value="" size=32></td>
+                            </tr>
+                            <tr>
+                                <td class="right"># BRs</td>
+                                <td class="left"> <input type="text" id="BRs" name="Number of BRs" value="" size="1" ></td>
+                            </tr>
+                            <tr>
+                                <td class="right">#BR Street Level</td>
+                                <td class="left"> <input type="text" id="StreetLevel" name="Street Level" value="" size="10"></td>
+                            </tr>
+                            <tr>
+                                <td class="right">#BR Upper Level</td>
+                                <td class="left"> <input type="text" id="UpperLevel" name="Upper Level" value="" size="10"></td>
+                            </tr>
+                            <tr>
+                                <td class="right">#BR Lower Level</td>
+                                <td class="left"> <input type="text" id="LowerLevel" name="Lower Level" value="" size="10"></td>
+                            </tr>
+                            <tr>
+                                <td class="right">Comments</td>
+                                <td class=left> <textarea rows="4" cols="32" id="Comments" name="Comments"></textarea> </td>
+                            </tr>
+                            <!-- 
+                            TO DO work:Create HTML to format input as ready for pasting into site.
+                                <tr>
+                                    <td id="{Villa ID}" class="cent"><a href="#{section}">{section}</a></td>
+                                    <td>{Villa #}</td>
+                                    <td class="cent">{Total BR}</td>
+                                    <td class="cent">{Street Level}</td>
+                                    <td class="cent">{Upstairs}</td>
+                                    <td class="cent">{Downstairs}</td>
+                                    <td>Very nice. Highly recommended.</td>
+                                </tr>
+                            -->
+                            <tr>
+                                <td></td> 
+                                <td class="left"><input type="submit" value="Submit Villa Information Form"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+                <h2> Contact Web Administrator</h2>
+                <p> Corrections and suggestions on how to improve the content are welcomed. Thank you for your time helping improve site for all of us. </p>
+                <form action="mailto:domrepai@outlook.com?cc=simard57@gmail.com&Subject=VillaSiteEmail" method="POST" enctype="text/plain">
+                    <table>
+                        <tr>
+                            <td class="right"> Enter Message </td>
+                            <td> <textarea rows="4" cols="32" id="body" name="body"></textarea> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <input type="submit" value="Send Email"> </td>
+                        </tr>
+                    </table>
+                </form>
+                <details>
+                    <summary id="About"><strong style="color:blue"> About website & authoring tools </strong></summary>
+                    <p> This site is an effort to centralize information that exists across the Chairman Circle Facebook page.
+                        It was a COVID-19 quarantine project by Don Simard (CC0260) and it is hosted on a personal Synology NAS. </p>
+                    <ul>
+                        <li> <a href="https://kryogenix.org/code/browser/sorttable/"> Sorttable</a> was a useful feature to add 
+                            to the Villa List. Stuart Langridge, the Author, was gracious in helping to address some issues I 
+                            encountered. Thank you Stuart for your help and recommendations.</li>
+                        <li> <a href="https://www.w3schools.com/html/">w3schools</a> was used to refresh my HTML skills.</li>
+                        <li> The <a href="https://www.w3schools.com/howto/howto_js_bottom_nav_responsive.asp">Responsive Navbar </a> is from the w3schools site.</li>
+                        <li> <a href="https://www.imagemap.org/"> Imagemap </a> was used to create the usemap coordinates and HTML code for the active maps. </li>
+                        <li> <a href="https://code.visualstudio.com/"> Visual Studio Code </a> is an excellent authoring tool.</li>
+                        <li> <a href="https://github.com/"> Gitbub </a> integrates well into Visual Studio Code for configuration control.</li>
+                        <li> The <a href="https://validator.w3.org/"> W3 HTML validator </a> was used to ensure HTML syntax was correct. </li>
+                    </ul>
+                    <p> ToDo list </p>
+                    <ul>
+                        <li> I am not satisfied with the web form mailer using a mailto element because it
+                            does not work well with people that do not use a mail client. The contact mailer
+                            is a low volume feature but I would like it done right - just the OCD in me. <br>
+                            I tried to use a php script to automate sending the form, but my 1st choice, 
+                            <a href="https://www.tectite.com/formmailpage.php"> formmail</a>, does not 
+                            work with Synology's PHP implementation and the recommendationsfrom Synology, 
+                            <a href="https://github.com/PHPMailer/PHPMailer"> phpmailer</a> seem overly 
+                            complex. If you have some expertise in this area, I would welcome help!</li>
+                    </ul>
+                </details>
+                <br><br><br>
+            </div>
+        </footer>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
+
+    </body>
+</html>
